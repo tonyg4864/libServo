@@ -1,6 +1,8 @@
-libServo.c
+libServoMotion.c
 ServoController.h
 ServoController.c
+-I ./../../Motor/libservo
+-L ./../../Motor/libservo
 >compiler=C
 >memtype=cmm main ram compact
 >optimize=-Os
@@ -8,4 +10,5 @@ ServoController.c
 >-fno-exceptions
 >defs::-std=c99
 >-create_library
+>linker::-lservo
 >BOARD::ACTIVITYBOARD

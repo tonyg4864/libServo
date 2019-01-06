@@ -1,9 +1,4 @@
-/*
-  Blank Simple Project.c
-  http://learn.parallax.com/propeller-c-tutorials 
-*/
-#include "simpletools.h"                    // Include simple tools
-#include "ServoController.c"
+#include "ServoController.h"
 
 int main()                                    // Main function
 {
@@ -17,7 +12,8 @@ int main()                                    // Main function
     print("What would you like to do?");
     scan("%d/n", &userInput);
     if(userInput == 1){
-      testServo(HEAD_SERVO_PIN);
+      //testServo(HEAD_SERVO_PIN);
+      testServo(17);
     }      
   }
 } 
